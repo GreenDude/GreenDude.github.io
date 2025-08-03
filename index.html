@@ -5,36 +5,30 @@
     <title>Cloud Racoon</title>
     <link rel="icon" type="image/png" href="src/img/Logo-dark.png">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        async function includeHTML() {
+            const includeElements = document.querySelectorAll('[data-include]');
+
+            for (const el of includeElements) {
+                const file = el.getAttribute('data-include');
+                try {
+                    const res = await fetch(file);
+                    if (!res.ok) throw new Error(`Failed to load ${file}`);
+                    const html = await res.text();
+                    el.innerHTML = html;
+                } catch (err) {
+                    el.innerHTML = `<div style="color:red;">${err.message}</div>`;
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', includeHTML);
+    </script>
+
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#home" class="active">
-            <img src="src/img/Logo-light.png" alt="Logo" class="logo" />
-        </a>
-
-        <div class="nav-links">
-            <div class="dropdown">
-                <button class="dropbtn">Articles ▼</button>
-                <div class="dropdown-content">
-                    <a href="#">Project Management</a>
-                    <a href="#">Phylosophy</a>
-                    <a href="#">Psychology</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Creations ▼</button>
-                <div class="dropdown-content">
-                    <a href="#latest-creation">Latest</a>
-                    <a href="#archive-creation">Archive</a>
-                </div>
-            </div>
-
-            <a href="#about">About me</a>
-        </div>
-    </div>
-
+    <div data-include="src/frames/navbar.html"></div>
 
 
     <div class="latest-story-image">

@@ -5,25 +5,7 @@
     <title>Cloud Racoon</title>
     <link rel="icon" type="image/png" href="src/img/Logo-dark.png">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        async function includeHTML() {
-            const includeElements = document.querySelectorAll('[data-include]');
-
-            for (const el of includeElements) {
-                const file = el.getAttribute('data-include');
-                try {
-                    const res = await fetch(file);
-                    if (!res.ok) throw new Error(`Failed to load ${file}`);
-                    const html = await res.text();
-                    el.innerHTML = html;
-                } catch (err) {
-                    el.innerHTML = `<div style="color:red;">${err.message}</div>`;
-                }
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', includeHTML);
-    </script>
+    <script src="src/scripts/include.js" defer></script>
 
 </head>
 

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Self-Identity",
+    "summary": "A deep dive into why is it important to know who you are...",
+    "thumbnail": "../../src/img/article1.jpg",
+    "date": "2025-08-01",
+    "link": "self-identity.html"
+  },
+  {
+    "title": "Trauma Response",
+    "summary": "Traume be ruining lives. Control it...",
+    "thumbnail": "../../src/img/article2.jpg",
+    "date": "2025-07-18",
+    "link": "trauma-response.html"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Nihilism",
+    "summary": "A deep dive into the how nihilism shaped our world...",
+    "thumbnail": "../../src/img/article1.jpg",
+    "date": "2025-08-01",
+    "link": "nihilism.html"
+  },
+  {
+    "title": "Racoon Void",
+    "summary": "Empty inside. Racoon has no trash, Trash panda sad...",
+    "thumbnail": "../../src/img/article2.jpg",
+    "date": "2025-07-18",
+    "link": "racoon-void.html"
+  }
+]

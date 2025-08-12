@@ -1,16 +1,9 @@
 [
   {
-    "title": "Why Agile Fails",
-    "summary": "A deep dive into the real-world challenges of Agile transformations...",
-    "thumbnail": "../../src/img/article1.jpg",
-    "date": "2025-08-01",
-    "link": "agile-fails.html"
-  },
-  {
-    "title": "Effective Retrospectives",
-    "summary": "Rethink the weekly retrospective with psychological insight and structure...",
-    "thumbnail": "../../src/img/article2.jpg",
-    "date": "2025-07-18",
-    "link": "retrospectives.html"
+    "title": "Data Driven Scrum",
+    "summary": "A practical guide to making Scrum work as intended by using structured internal reporting and actionable insights. Learn how to combine Delivery KPIs, Team Health KPIs, and Narrative Data to boost transparency, spot patterns, and drive meaningful improvements — with AI as your ally in keeping teams healthy, productive, and engaged.",
+    "thumbnail": "/articles/project-management/src/img/ScrumMasterRaccoon.png",
+    "date": "2025-08-13",
+    "link": "data-driven-scrum.html"
   }
 ]

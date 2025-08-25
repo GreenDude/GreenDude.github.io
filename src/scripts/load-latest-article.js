@@ -1,14 +1,8 @@
-// const CATEGORY_PATHS = [
-//   'articles/project-management/metadata.json',
-//   'articles/philosophy/metadata.json',
-//   'articles/psychology/metadata.json'
-// ];
-
 const CATEGORY_PATHS = [
   './articles/project-management/metadata.json',
   './articles/philosophy/metadata.json',
   './articles/psychology/metadata.json'
-];
+]
 
 async function loadLatestArticle() {
   try {

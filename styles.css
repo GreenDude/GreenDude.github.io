@@ -276,3 +276,51 @@ body {
 .read-latest-article:hover {
   background-color: #1a1a1a;
 }
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* .profile-photo {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 8px;
+  float: left;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.download-cv-button {
+  background-color: #fff;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-button:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}

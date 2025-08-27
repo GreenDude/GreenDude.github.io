@@ -17,7 +17,7 @@ async function loadArticles(metadataPath, metadataFile, containerSelector) {
                     <p class="section-label">${new Date(article.date).toLocaleDateString()}</p>
                     <h2 class="article-title">${article.title}</h2>
                     <p class="latest-story-text">${article.summary}</p>
-                    <a href="${metadataPath + article.link}" class="read-latest-article">READ NOW</a>
+                    <a href="${article.link}" class="read-latest-article">READ NOW</a>
                 </div>
             `;
             container.appendChild(card);

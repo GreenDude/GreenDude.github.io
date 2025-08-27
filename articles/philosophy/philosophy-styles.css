@@ -1,0 +1,119 @@
+.article-page {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 24px;
+  line-height: 1.7;
+  color: #2c3e50;
+}
+
+.article-page h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.2;
+}
+
+.inline-share {
+  display: flex;
+  align-items: center;
+  height: 20px; /* keeps things tightly aligned */
+  margin-left: 8px;
+}
+
+.article-content p {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.article-content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 32px 0;
+}
+
+.article-share-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.article-share-buttons button {
+  background-color: #0077b5;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.article-share-buttons button:hover {
+  background-color: #005983;
+}
+
+.copy-feedback {
+  font-size: 14px;
+  color: green;
+}
+
+.share-article {
+  padding: 32px 0;
+  text-align: center;
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+}
+
+.article-share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.article-share-buttons button {
+  background-color: #0077b5;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.article-share-buttons button:hover {
+  background-color: #005983;
+}
+
+.copy-feedback {
+  font-size: 14px;
+  color: green;
+  margin-left: 12px;
+}
+
+.copy-link-button {
+  background-color: #f3f6f8;
+  color: #0077b5;
+  border: 1px solid #c9d6de;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.copy-link-button:hover {
+  background-color: #e6eff4;
+}

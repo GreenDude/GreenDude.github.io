@@ -1,16 +1,16 @@
 [
   {
-    "title": "Nihilism",
-    "summary": "A deep dive into the how nihilism shaped our world...",
-    "thumbnail": "../../src/img/article1.jpg",
-    "date": "2025-08-01",
-    "link": "nihilism.html"
+    "title": "Ichi-Go Ichi-E",
+    "summary": "A reflection on the Japanese proverb “Ichi-Go, Ichi-E” — one time, one meeting — and its reminder that every moment is unique and unrepeatable. I explore how this idea reshapes our view of time, turning setbacks into growth opportunities and daily routines into chances for presence. Like Agile’s focus on iteration, it highlights the importance of embracing impermanence, finding balance, and learning from each fleeting moment.",
+    "thumbnail": "/articles/philosophy/src/img/IchiGo-Ichi-E.png",
+    "date": "2025-10-01",
+    "link": "/articles/philosophy/IchiGo-IchiE.html"
   },
   {
-    "title": "Racoon Void",
-    "summary": "Empty inside. Racoon has no trash, Trash panda sad...",
-    "thumbnail": "../../src/img/article2.jpg",
-    "date": "2025-07-18",
-    "link": "racoon-void.html"
+    "title": "Will To Moral",
+    "summary": "A reflection on Nietzsche’s idea of the “Will to Power,” once tied to imperialism and authoritarianism, and how it has transformed in modern times. While Nietzsche dismissed democracy and equality as weakness, today’s most successful nations are democratic, thriving on creativity, innovation, and shared morality rather than conquest. I reflect on how will to power has evolved from individual domination to the collective shaping of societal morals—seen in various movements. Ultimately, power in modern societies is rooted less in rulers and more in shared values that continue to evolve.",
+    "thumbnail": "/articles/philosophy/src/img/RaccoonNietzsche.png",
+    "date": "2025-09-24",
+    "link": "/articles/philosophy/will-to-moral.html"
   }
 ]

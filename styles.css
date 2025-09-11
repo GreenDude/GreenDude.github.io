@@ -222,6 +222,7 @@ body {
   padding: 32px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   gap: 48px;
+  overflow: hidden;
 }
 
 .article-card img {
@@ -255,10 +256,22 @@ body {
 }
 
 .article-content .latest-story-text {
-  font-size: 16px;
-  line-height: 1.6;
-  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;   /* Show max 6 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-bottom: 24px;
+}
+
+.article-content .latest-story-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, transparent, white);
 }
 
 .read-latest-article {

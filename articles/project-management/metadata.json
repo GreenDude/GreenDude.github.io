@@ -5,5 +5,12 @@
     "thumbnail": "/articles/project-management/src/img/ScrumMasterRaccoon.png",
     "date": "2025-08-17",
     "link": "/articles/project-management/data-driven-scrum.html"
+  },
+  {
+    "title": "On High-Performing Teams & People",
+    "summary": "An exploration of how principles from open-source communities, as described by Pieter Hintjens in Social Architecture, can transform corporate teams into high-performing, resilient groups. Through eight core principles — transparency, fair process, scalable patterns, low barriers to entry, toxicity management, the right to learn, sustainability, and shared ownership — the article blends personal experience with proven practices to show how leaders can design systems that inspire intrinsic motivation, trust, and enduring performance.",
+    "thumbnail": "/articles/project-management/src/img/OpenSourceComunity.png",
+    "date": "2025-09-24",
+    "link": "/articles/project-management/on-high-performing-teams.html"
   }
 ]

@@ -117,3 +117,24 @@
 .copy-link-button:hover {
   background-color: #e6eff4;
 }
+.conclusion-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 24px;
+  column-count: unset;
+  columns: unset;
+}
+.conclusion-emblem {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.conclusion-block p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}

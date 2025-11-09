@@ -1,16 +1,40 @@
 [
-  {
-    "title": "Self-Identity",
-    "summary": "A deep dive into why is it important to know who you are...",
-    "thumbnail": "../../src/img/article1.jpg",
-    "date": "2025-08-01",
-    "link": "self-identity.html"
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/articles/psychology/tailor-burnout-recovery.html"
   },
-  {
-    "title": "Trauma Response",
-    "summary": "Traume be ruining lives. Control it...",
-    "thumbnail": "../../src/img/article2.jpg",
-    "date": "2025-07-18",
-    "link": "trauma-response.html"
-  }
+  "headline": "Tailoring Burnout Recovery with the DiSC Model",
+  "description": "Burnout doesn’t manifest the same way for everyone — it depends on how each person’s behavior and motivation interact with stress. The DiSC model offers a practical lens for understanding those differences, showing how Dominance, Influence, Steadiness, and Conscientiousness types each burn out and recover in unique ways. Unlike deeper personality theories like the Five-Factor Model, DiSC focuses on observable behavior, making it ideal for leaders and teams to recognize stress patterns in themselves and others.",
+  "image": "/articles/psychology/src/img/disc-raccoon-preview.png",
+  "author": {
+    "@type": "Person",
+    "name": "Gheorghii Mosin",
+    "url": "https://www.cloud-raccoon.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cloud Raccoon",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.cloud-raccoon.com/src/img/Logo-dark.png"
+    }
+  },
+  "datePublished": "2025-11-09T00:00:00+02:00",
+  "dateModified": "2025-11-09T00:00:00+02:00",
+  "articleSection": "Psychology",
+  "keywords": [
+    "burnout recovery",
+    "DiSC model",
+    "Dominance",
+    "Influence",
+    "Steadiness",
+    "Conscientiousness",
+    "leadership",
+    "mental health at work",
+    "behavioral psychology"
+  ]
+}
 ]

@@ -12,5 +12,44 @@
     "thumbnail": "/articles/project-management/src/img/OpenSourceComunity.png",
     "date": "2025-09-24",
     "link": "/articles/project-management/on-high-performing-teams.html"
-  }
+  },
+  {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/articles/project-management/ai-agents-vs-purpose-built-automation.html"
+  },
+  "headline": "AI Agents vs. Purpose-Built Automation",
+  "description": "A pragmatic operational perspective on AI agents versus purpose-built automation in project management. The article explores where AI adds value, where it introduces hidden risk, and why deterministic, precision-built tools often outperform brute-force automation in delivery workflows.",
+  "image": "/articles/project-management/src/img/Agents-vs-Automation.png",
+  "author": {
+    "@type": "Person",
+    "name": "Gheorghii Mosin",
+    "url": "https://www.cloud-raccoon.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cloud Raccoon",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.cloud-raccoon.com/src/img/Logo-dark.png"
+    }
+  },
+  "datePublished": "2025-12-22T00:00:00+02:00",
+  "dateModified": "2025-12-22T00:00:00+02:00",
+  "articleSection": "Project Management",
+  "keywords": [
+    "AI agents",
+    "purpose-built automation",
+    "project management",
+    "delivery operations",
+    "deterministic automation",
+    "workflow automation",
+    "AI risk",
+    "stakeholder reporting",
+    "operational reliability",
+    "accountability in delivery"
+  ]
+}
 ]

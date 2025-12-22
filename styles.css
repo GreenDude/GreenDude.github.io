@@ -5,13 +5,13 @@ body {
   color: #2c3e50;
 }
 
-.article-content {
+/* .article-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 300px;
-  /* Match image height */
-}
+
+} */
 
 .creation-descryption {
   display: flex;
@@ -233,7 +233,52 @@ body {
   background-color: #f0f0f0;
 }
 
+@media (max-width: 768px) {
+  .latest-story-image {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    margin: 24px auto;
+  }
+
+  .latest-story-image img {
+    width: 100%;
+    height: auto;      /* important */
+    max-width: 100%;
+  }
+}
+
+/* .article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  flex: 1;
+} */
+/* article body should NOT have fixed height */
 .article-content {
+  display: block;
+  height: auto;
+}
+
+/* keep the 300px layout ONLY for cards/listing */
+.article-card .article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  flex: 1;
+}
+
+
+/* article body should NOT have fixed height */
+.article-content {
+  display: block;
+  height: auto;
+}
+
+/* keep the 300px layout ONLY for cards/listing */
+.article-card .article-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

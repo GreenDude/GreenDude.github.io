@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JVM Dev Talks</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .hero {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn-primary {
+      background: #f97316;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #e0ecff;
+      color: #2563eb;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .section h3 {
+      color: #f97316;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .speaker {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .hex {
+      width: 100px;
+      height: 100px;
+      background: #ddd;
+      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    }
+
+    .agenda {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .agenda-item {
+      display: flex;
+      gap: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 40px;
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>JVM Dev Talks</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#agenda">Agenda</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>JVM Dev Talks</h2>
+    <p>
+      A community-driven event in Chișinău focused on Java, Kotlin,
+      and real-world engineering.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="btn btn-primary">Get Tickets</a>
+    </div>
+  </div>
+
+  <div id="about" class="section">
+    <h3>Why attend</h3>
+    <h2>Designed for developers who care</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h4>Practical talks</h4>
+        <p>Real engineering insights, no fluff.</p>
+      </div>
+      <div class="card">
+        <h4>Community</h4>
+        <p>Meet local engineers and builders.</p>
+      </div>
+      <div class="card">
+        <h4>High signal</h4>
+        <p>Small audience, meaningful conversations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="speakers" class="section">
+    <h3>Speakers</h3>
+    <h2>Lineup preview</h2>
+
+    <div class="cards">
+      <div class="card speaker">
+        <div class="hex"></div>
+        <div>
+          <h4>Speaker Name</h4>
+          <p><strong>Modern Java in Production</strong></p>
+          <p>Real-world lessons from JVM systems.</p>
+        </div>
+      </div>
+
+      <div class="card speaker">
+        <div class="hex"></div>
+        <div>
+          <h4>Speaker Name</h4>
+          <p><strong>Kotlin Deep Dive</strong></p>
+          <p>Patterns and practices that scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="agenda" class="section">
+    <h3>Agenda</h3>
+    <h2>Event flow</h2>
+
+    <div class="agenda">
+      <div class="agenda-item"><b>18:00</b> Doors open</div>
+      <div class="agenda-item"><b>18:30</b> Opening</div>
+      <div class="agenda-item"><b>18:40</b> Talks</div>
+      <div class="agenda-item"><b>19:40</b> Break</div>
+      <div class="agenda-item"><b>20:00</b> Final talks</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  JVM Dev Talks — Chișinău Community Event
+</footer>
+
+</body>
+</html>

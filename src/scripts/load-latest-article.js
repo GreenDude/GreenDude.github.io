@@ -1,5 +1,6 @@
 // load-latest-article.js
 const CATEGORY_PATHS = [
+  './articles/dev/metadata.json',
   './articles/project-management/metadata.json',
   './articles/philosophy/metadata.json',
   './articles/psychology/metadata.json'

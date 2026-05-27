@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Burnout Back to Builder – Cloud Raccoon</title>
+
+    <!-- ✅ Basic SEO -->
+    <meta name="description"
+        content="A personal and technical statement on moving back from project management into engineering, why building matters, and why AI should be treated as a constrained engineering tool rather than magic." />
+    <link rel="canonical" href="https://www.cloud-raccoon.com/articles/project-management/from-burnout-back-to-builder.html" />
+
+    <!-- 🧩 Favicon -->
+    <link rel="icon" type="image/png" href="/src/img/Logo-dark.png" />
+
+    <!-- 🎨 Styles -->
+    <link rel="stylesheet" href="/styles.css?v=3" />
+    <link rel="stylesheet" href="pm-styles.css?v=3" />
+
+    <!-- 🔗 Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Cloud Raccoon" />
+    <meta property="og:title" content="From Burnout Back to Builder" />
+    <meta property="og:description"
+        content="Why I am moving back into a technical role, why engineering still matters, and why AI should be used as a carefully constrained tool instead of a replacement for judgment." />
+    <meta property="og:url" content="https://www.cloud-raccoon.com/articles/project-management/from-burnout-back-to-builder.html" />
+    <meta property="og:image" content="https://www.cloud-raccoon.com/articles/project-management/src/img/local-first-ai-systems.png" />
+    <meta property="og:image:alt" content="Dark cyberpunk-inspired banner about local-first AI systems and software engineering" />
+    <meta property="article:author" content="Gheorghii Mosin" />
+    <meta property="article:published_time" content="2026-05-27T00:00:00+03:00" />
+    <meta property="article:section" content="Project Management" />
+    <meta property="article:tag" content="Software Engineering" />
+    <meta property="article:tag" content="Local AI" />
+    <meta property="article:tag" content="Software Architecture" />
+    <meta property="article:tag" content="Career Transition" />
+
+    <!-- 📘 LinkedIn SDK -->
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+    </script>
+
+    <!-- 🧠 Structured Data for Google (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.cloud-raccoon.com/articles/project-management/from-burnout-back-to-builder.html"
+        },
+        "headline": "From Burnout Back to Builder",
+        "description": "A personal and technical statement on moving back from project management into engineering, why building matters, and why AI should be treated as a constrained engineering tool rather than magic.",
+        "image": "https://www.cloud-raccoon.com/articles/project-management/src/img/local-first-ai-systems.png",
+        "author": {
+            "@type": "Person",
+            "name": "Gheorghii Mosin",
+            "url": "https://www.cloud-raccoon.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cloud Raccoon",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.cloud-raccoon.com/src/img/Logo-dark.png"
+            }
+        },
+        "datePublished": "2026-05-27T00:00:00+03:00",
+        "dateModified": "2026-05-27T00:00:00+03:00",
+        "articleSection": "Project Management",
+        "keywords": [
+            "software engineering",
+            "local AI",
+            "local LLM",
+            "developer tools",
+            "software architecture",
+            "AI code review",
+            "career transition",
+            "technical leadership",
+            "Gitea",
+            "FastAPI",
+            "Docker",
+            "LM Studio",
+            "build in public"
+        ]
+    }
+    </script>
+
+    <!-- ⚙️ Scripts -->
+    <script src="/src/scripts/share.js" defer></script>
+    <script src="/src/scripts/include.js" defer></script>
+</head>
+
+<body>
+    <div data-include="/src/frames/navbar.html"></div>
+
+    <main class="article-page">
+        <h1>From Burnout to Builder</h1>
+        <h2 style="text-align: center;">Why I am moving back into engineering</h2>
+
+        <p class="article-meta">
+            Published on May 27, 2026
+            <span class="inline-share">
+                <script type="IN/Share" data-url=""></script>
+            </span>
+        </p>
+
+        <img class="hide-completely" src="/articles/project-management/src/img/local-first-ai-systems.png" alt="Local-first AI systems banner">
+
+        <section class="article-content">
+            <h3 class="subtitle">This is not a dramatic reinvention. It is a return to the part of the work that made sense to me in the first place.</h3>
+
+            <div class="video-embed">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/NCun0E2jr8M"
+                    title="From Burnout Back to Builder"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+
+            <p>
+                I have been a system builder for most of my life. That is what pulled me toward IT in the first place:
+                the possibility of taking a messy problem, breaking it into parts, shaping those parts into a working
+                structure, and then seeing the whole thing come alive. Not just talking about the system. Not only
+                coordinating the system. Building it.
+            </p>
+
+            <p>
+                My career did not follow a straight line. I worked in QA Automation, then moved deeper into leadership,
+                project management, delivery, and team coordination. Those roles taught me a lot. I learned how teams
+                break, how delivery systems rot, how communication fails, how stakeholders misunderstand incentives,
+                and how technical debt quietly turns into organizational debt. I also learned how much good management
+                can help when it is done with care.
+            </p>
+
+            <p>
+                But there was a cost. Over time, I drifted away from hands-on engineering. At first it felt reasonable:
+                the team needed coordination, the client needed clarity, the process needed someone to hold it together.
+                Then the gap grew. I was still close to technical work, but no longer close enough to the act of
+                building. And slowly, something important disappeared.
+            </p>
+
+            <h2>What Burnout Taught Me</h2>
+
+            <p>
+                Burnout is not always caused by laziness, weakness, or a lack of resilience. Sometimes it is caused by
+                spending too much time in a shape that no longer fits you. For me, the issue was not that project
+                management was useless. It was not. The issue was that my strongest source of energy has always come
+                from building systems, and I had moved too far from that source.
+            </p>
+
+            <p>
+                There is a specific kind of exhaustion that appears when your responsibility grows but your creative
+                agency shrinks. You become accountable for outcomes, dependencies, estimates, expectations, delays,
+                politics, and morale, but the actual act of making something useful is always one step away. You are
+                close enough to the work to understand what is happening, but not close enough to change the system
+                directly through code, architecture, or implementation.
+            </p>
+
+            <p>
+                That gap is dangerous. It creates a strange kind of professional dissociation. You can still perform.
+                You can still hold meetings. You can still produce reports. You can still look responsible. But inside,
+                the work starts feeling indirect. You are moving information around instead of shaping reality.
+            </p>
+
+            <p>
+                Taking a step back made the conclusion obvious: I want to build again. Not as a hobby squeezed into
+                exhausted evenings. Not as a nostalgic escape. As the center of my professional direction.
+            </p>
+
+            <h2>Why Move Back Into a Technical Role?</h2>
+
+            <p>
+                The reason is simple, but not shallow: engineering gives me direct contact with consequences. A design
+                works or it does not. A service starts or it crashes. An API contract is clear or it becomes a future
+                migration nightmare. A boundary is well-defined or it leaks complexity everywhere. Engineering forces
+                decisions to become concrete.
+            </p>
+
+            <p>
+                That concreteness matters to me. It is where abstract thinking becomes useful. Project management taught
+                me how to see systems at the human and organizational level. QA Automation taught me how to think in
+                terms of verification, failure paths, and repeatability. Moving back into engineering is not a rejection
+                of those years. It is the attempt to combine them.
+            </p>
+
+            <p>
+                I do not want to become a developer who only writes tickets into code. I want to become a better system
+                designer. My long-term goal is software architecture, and for that, management experience is not wasted.
+                It gives me a different lens: architecture is not only about services, databases, queues, and APIs. It
+                is also about constraints, ownership, operational reality, communication, risk, and the ability of a
+                team to safely evolve a system over time.
+            </p>
+
+            <p>
+                But to earn that role properly, I need to rebuild technical depth. Architecture without implementation
+                experience becomes theater. Diagrams without code become decoration. Strategy without hands-on feedback
+                becomes guesswork. So the path is clear: build real projects, document the tradeoffs, expose the
+                decisions, and let the work speak.
+            </p>
+
+            <h2>Why Engineering?</h2>
+
+            <p>
+                Engineering is not just coding. Coding is the visible part. Engineering is the discipline of making
+                systems reliable enough to be trusted, understandable enough to be changed, and constrained enough to
+                survive real use.
+            </p>
+
+            <p>
+                That is what attracts me. I like the space between idea and implementation. I like the question:
+                <em>What is the simplest system that can solve this problem without lying about its limitations?</em>
+                I like designing boundaries. I like deciding where complexity should live. I like thinking about the
+                boring things that decide whether a project survives: configuration, observability, data flow, failure
+                modes, security, testing, deployment, and maintainability.
+            </p>
+
+            <p>
+                This is also why I am interested in local-first AI systems and developer tooling. They sit at the
+                intersection of several things I care about: software architecture, automation, privacy, human judgment,
+                and practical productivity. They are technical enough to be meaningful, but close enough to real human
+                workflows to matter.
+            </p>
+
+            <h2>The First Experiment: ALT-Repo</h2>
+
+            <p>
+                ALT-Repo is a small, backend-only experiment: a local-first AI code review assistant built around
+                Gitea, Docker, FastAPI, and a locally running LLM through LM Studio. The idea is intentionally simple.
+                A pull request is opened or updated in Gitea. Gitea sends a webhook to the reviewer service. The service
+                fetches the pull request diff, prepares it, sends it to a local OpenAI-compatible model endpoint, and
+                posts the generated review back to the pull request.
+            </p>
+
+            <p>
+                The important part is not that the model gives perfect review feedback. It does not. The important part
+                is the shape of the system: code stays local, the workflow is understandable, the integration is small,
+                and the AI is placed inside a narrow, auditable boundary. It is not a magic agent wandering through the
+                repository. It is a constrained tool in a specific workflow.
+            </p>
+
+            <p>
+                Architecturally, the MVP is deliberately modest. FastAPI receives the webhook. A review pipeline fetches
+                the diff from Gitea. The diff is lightly sanitized and truncated. A prompt template is filled. A local
+                LLM generates markdown feedback. The result is posted back as a pull request comment. The core modules
+                are separated by responsibility: configuration, webhook handling, Gitea API access, LLM access, diff
+                utilities, prompt building, and the review service itself.
+            </p>
+
+            <p>
+                That simplicity is a feature. An MVP should make the main idea visible. The current system is not a
+                production-grade reviewer. It still has trust-boundary and operational risks to address: local-only
+                endpoint validation needs to be stricter, webhook signature handling should not silently become
+                optional in serious deployments, and runtime dependencies such as prompt templates should be validated
+                earlier. These are not reasons to hide the project. They are the exact kind of tradeoffs worth
+                documenting.
+            </p>
+
+            <h2>My Stance on AI</h2>
+
+            <p>
+                I am not anti-AI. I am also not interested in worshipping it. My stance is simple:
+                <strong>AI is a tool, not an authority.</strong>
+            </p>
+
+            <p>
+                The current hype cycle often treats AI as if it can replace judgment. I do not believe that is a healthy
+                or technically mature position. AI can draft, summarize, classify, inspect, compare, and suggest. It can
+                help us move faster through certain kinds of work. But it does not remove accountability. It does not
+                understand business consequences the way a responsible human does. It does not own the system. It does
+                not carry the operational burden when something breaks.
+            </p>
+
+            <p>
+                That is why I prefer constrained AI over vague autonomy. A local code review assistant is useful because
+                it has a clear job: look at a diff and produce feedback. A documentation assistant can be useful because
+                it has a bounded context: read this module and explain how it fits into the system. A learning tutor can
+                be useful because it has an educational goal and can be evaluated against student progress. The more
+                specific the boundary, the more useful AI becomes.
+            </p>
+
+            <p>
+                The opposite approach is dangerous: vague agents with broad permissions, unclear objectives, hidden
+                reasoning, weak auditability, and too much trust. That is not engineering. That is gambling with extra
+                steps.
+            </p>
+
+            <h2>Local-First AI Is Not Just a Preference</h2>
+
+            <p>
+                I care about local-first AI because privacy and control matter. Developer workflows often involve
+                proprietary code, internal architecture, business logic, credentials, private tickets, and sensitive
+                operational context. Sending all of that to external cloud services should not be the default assumption.
+            </p>
+
+            <p>
+                Local-first does not mean cloud is always wrong. It means the default architecture should respect data
+                boundaries. If a team chooses to use a cloud model, that should be a deliberate decision with clear
+                tradeoffs, not an accidental consequence of convenience. Local models are not always better. They can be
+                slower, weaker, harder to operate, and more limited. But they also give us something important:
+                ownership of the execution environment.
+            </p>
+
+            <p>
+                For developer tooling, this matters. The future I am interested in is not one where AI replaces
+                engineers. It is one where engineers build better tools around AI: tools that are observable,
+                configurable, secure, modular, and honest about uncertainty.
+            </p>
+
+            <h2>AI-Assisted Review Is a Safety Net, Not a Gatekeeper</h2>
+
+            <p>
+                Code review is a useful example because it shows both the promise and the danger of AI. A model can
+                notice suspicious patterns, missing tests, unclear error handling, risky configuration defaults, or
+                documentation drift. It can be a second pair of eyes. It can help junior developers learn. It can reduce
+                the chance that obvious issues slip through when everyone is tired.
+            </p>
+
+            <p>
+                But it should not become the final authority. Human review still matters because humans understand
+                intent, product context, team history, deployment risk, and the cost of being wrong. AI can produce
+                confident nonsense. It can miss important context. It can over-focus on style and under-focus on
+                business risk. It can be useful and unreliable at the same time.
+            </p>
+
+            <p>
+                That is why my preferred model is not <em>AI replaces review</em>. It is
+                <em>AI prepares review</em>. It highlights possibilities. It asks questions. It points to risks. Then a
+                human decides what matters.
+            </p>
+
+            <h2>How This Connects to ALT</h2>
+
+            <p>
+                ALT-Repo is not the final destination. It is one experiment in a broader direction: local-first AI
+                systems, developer tooling, and eventually ALT — Artificial Learning Tutor.
+            </p>
+
+            <p>
+                The connection is not only technical. It is philosophical. ALT, as I imagine it, should not be another
+                magical black box that pretends to teach. It should be a learning system with explicit boundaries,
+                teacher-provided context, measurable progress, modular skills, and transparent behavior. It should help
+                people learn without replacing the responsibility of the learner or the teacher.
+            </p>
+
+            <p>
+                That requires the same engineering stance: clear architecture, local or controlled data handling,
+                constrained AI behavior, meaningful feedback loops, and enough humility to admit when the system does
+                not know.
+            </p>
+
+            <h2>Building in Public</h2>
+
+            <p>
+                This channel and this blog are part of the same experiment. I am documenting the move back into
+                engineering in public: the projects, the architecture, the implementation choices, the mistakes, the
+                refactoring, the tradeoffs, and the lessons.
+            </p>
+
+            <p>
+                I do not want to present a fake story where everything is polished from the beginning. Real engineering
+                is iterative. The first version is often rough. The first architecture is often incomplete. The first
+                assumptions often break. That is fine, as long as the work keeps moving and the lessons are captured.
+            </p>
+
+            <p>
+                In a strange way, this is also a recovery process. Burnout narrowed my world. Building opens it again.
+                Every working service, every fixed bug, every clarified boundary, every small architectural decision is
+                a step back toward the version of the field that made me care in the first place.
+            </p>
+
+            <h2>What I Am Optimizing For</h2>
+
+            <p>
+                I am not optimizing for hype. I am not optimizing for pretending that every AI demo is a revolution. I
+                am optimizing for engineering substance.
+            </p>
+
+            <ul>
+                <li><strong>Local-first when sensitive context is involved.</strong></li>
+                <li><strong>Human judgment as the standard.</strong></li>
+                <li><strong>AI as an assistant, not an owner.</strong></li>
+                <li><strong>Architecture that makes tradeoffs visible.</strong></li>
+                <li><strong>Tools that solve real workflow problems.</strong></li>
+                <li><strong>Projects that can teach both me and others something useful.</strong></li>
+            </ul>
+
+            <p>
+                That is the direction: rebuild technical depth, produce useful projects, document the journey, and move
+                toward software architecture through actual engineering work rather than slogans.
+            </p>
+
+            <h2>Final Thoughts</h2>
+
+            <p>
+                Moving back into a technical role is not a rejection of project management. It is a correction of course.
+                The years spent in delivery taught me how systems fail at the human level. Now I want to combine that
+                with the engineering depth needed to build systems that fail less often, recover more clearly, and remain
+                understandable as they grow.
+            </p>
+
+            <p>
+                AI will be part of that journey, but not as magic. Not as a replacement for thinking. Not as a
+                substitute for responsibility.
+            </p>
+
+            <p>
+                AI as a tool. Human judgment as the standard. Engineering as the craft.
+            </p>
+
+            <footer class="share-article">
+                <p class="article-meta">
+                    Published on May 27, 2026
+                    <span class="inline-share">
+                        <script type="IN/Share"
+                            data-url="https://www.cloud-raccoon.com/articles/project-management/from-burnout-back-to-builder.html"
+                            data-counter="right"></script>
+                    </span>
+                </p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="../../src/scripts/include.js" defer></script>
+</body>
+
+</html>

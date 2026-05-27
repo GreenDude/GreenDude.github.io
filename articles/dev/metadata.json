@@ -1,0 +1,44 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/articles/dev/from-burnout-back-to-builder.html"
+    },
+    "headline": "From Burnout Back to Builder",
+    "description": "A personal and technical statement on moving back from project management into engineering, why building matters, and why AI should be treated as a constrained engineering tool rather than magic.",
+    "image": "/articles/dev/src/img/c280515ce7010ffa4383341baf31950bec8f783613f55b97fbcb0436004211b7.png",
+    "author": {
+      "@type": "Person",
+      "name": "Gheorghii Mosin",
+      "url": "https://www.cloud-raccoon.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cloud Raccoon",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.cloud-raccoon.com/src/img/Logo-dark.png"
+      }
+    },
+    "datePublished": "2026-05-27T00:00:00+03:00",
+    "dateModified": "2026-05-27T00:00:00+03:00",
+    "articleSection": "Dev",
+    "keywords": [
+      "software engineering",
+      "local AI",
+      "local LLM",
+      "developer tools",
+      "software architecture",
+      "AI code review",
+      "career transition",
+      "technical leadership",
+      "Gitea",
+      "FastAPI",
+      "Docker",
+      "LM Studio",
+      "build in public"
+    ]
+  }
+]

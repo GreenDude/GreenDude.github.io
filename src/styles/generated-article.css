@@ -1,0 +1,66 @@
+.generated-article {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.generated-article__hero {
+  display: grid;
+  gap: 18px;
+  padding: 40px;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(12, 44, 32, 0.08);
+}
+
+.generated-article__eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #275d4c;
+}
+
+.generated-article__summary,
+.generated-article__meta {
+  color: #355f52;
+}
+
+.generated-article__share {
+  border: 0;
+  border-radius: 999px;
+  background: #173f34;
+  color: #fff;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.generated-article__cover,
+.generated-article__inline-image {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.generated-article__content {
+  margin-top: 32px;
+  font-size: 1.06rem;
+  line-height: 1.85;
+  color: #24342e;
+}
+
+.generated-article__content h2,
+.generated-article__content h3,
+.generated-article__content h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .generated-article {
+    padding: 24px 16px 56px;
+  }
+
+  .generated-article__hero {
+    padding: 24px;
+  }
+}

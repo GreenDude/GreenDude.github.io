@@ -1,5 +1,6 @@
 // load-latest-article.js
 const CATEGORY_PATHS = [
+  './articles/ai/',
   './articles/dev/metadata.json',
   './articles/project-management/metadata.json',
   './articles/philosophy/metadata.json',
@@ -57,19 +58,33 @@ async function loadLatestArticle() {
     const allArticles = [];
 
     for (const path of CATEGORY_PATHS) {
-      console.log(`Fetching: ${path}`);
-      const res = await fetch(path);
-      if (!res.ok) {
-        console.warn(`Failed to fetch ${path}`);
-        continue;
+      const feedFiles = path.endsWith('.json')
+        ? [path, path.replace('metadata.json', 'generated-metadata.json')]
+        : [`${path}metadata.json`, `${path}generated-metadata.json`];
+
+      for (const feedPath of feedFiles) {
+        console.log(`Fetching: ${feedPath}`);
+        const res = await fetch(feedPath);
+        if (!res.ok) {
+          continue;
+        }
+        const raw = await res.json();
+        const arr = Array.isArray(raw) ? raw : [];
+        allArticles.push(...arr.map(normalizeArticle));
       }
-      const raw = await res.json();
-      const arr = Array.isArray(raw) ? raw : [];
-      allArticles.push(...arr.map(normalizeArticle));
     }
 
-    allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-    const latest = allArticles[0];
+    const uniqueArticles = [];
+    const seen = new Set();
+    for (const article of allArticles) {
+      const key = article.link || `${article.title}|${article.date}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      uniqueArticles.push(article);
+    }
+
+    uniqueArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const latest = uniqueArticles[0];
     console.log('Latest article:', latest);
     if (!latest) return;
 

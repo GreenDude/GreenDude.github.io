@@ -63,11 +63,26 @@ function normalizeArticle(entry) {
 
 async function loadArticles(metadataPath, metadataFile, containerSelector) {
   try {
-    const res = await fetch(metadataPath + metadataFile);
-    const raw = await res.json();
+    const feedFiles = Array.from(new Set([metadataFile, 'generated-metadata.json']));
+    const articleBatches = await Promise.all(feedFiles.map(async (file) => {
+      try {
+        const res = await fetch(metadataPath + file);
+        if (!res.ok) return [];
+        const raw = await res.json();
+        return (Array.isArray(raw) ? raw : []).map(normalizeArticle);
+      } catch (error) {
+        console.warn('Skipping article feed:', metadataPath + file, error);
+        return [];
+      }
+    }));
 
-    // raw is expected to be an array in both V1 and V2
-    const articles = (Array.isArray(raw) ? raw : []).map(normalizeArticle);
+    const seen = new Set();
+    const articles = articleBatches.flat().filter(article => {
+      const key = article.link || `${article.title}|${article.date}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
 
     // Newest first (supports ISO or yyyy-mm-dd)
     articles.sort((a, b) => new Date(b.date) - new Date(a.date));

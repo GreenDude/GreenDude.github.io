@@ -5,6 +5,15 @@ function shareOnLinkedIn() {
   window.open(linkedInUrl, '_blank', 'noopener,noreferrer');
 }
 
+function createLinkedInShareButton() {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'generated-article__share generated-article__share--secondary';
+  button.textContent = 'Share on LinkedIn';
+  button.addEventListener('click', shareOnLinkedIn);
+  return button;
+}
+
 function copyArticleLink() {
   const currentUrl = window.location.href;
   navigator.clipboard.writeText(currentUrl)
@@ -37,5 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // If LinkedIn API loaded, re-parse to render their official button(s)
   if (typeof IN !== 'undefined' && IN.parse) {
     IN.parse();
+    return;
   }
+
+  linkedInWidgets.forEach(widget => {
+    const fallbackButton = createLinkedInShareButton();
+    widget.replaceWith(fallbackButton);
+  });
 });

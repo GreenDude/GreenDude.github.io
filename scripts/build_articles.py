@@ -353,6 +353,7 @@ def render_article_html(article: ArticleDoc, category_dir: Path) -> str:
     <meta property="article:published_time" content="{article.published_iso}" />
     <meta property="article:section" content="{html.escape(article.section, quote=True)}" />
 {tags}
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
     <script type="application/ld+json">
 {json_ld}
     </script>
@@ -366,11 +367,12 @@ def render_article_html(article: ArticleDoc, category_dir: Path) -> str:
             <p class="generated-article__eyebrow">{html.escape(article.section, quote=True)}</p>
             <h1>{html.escape(article.title, quote=True)}</h1>
             <p class="generated-article__summary">{html.escape(article.summary, quote=True)}</p>
-            <div class="generated-article__meta">
-                <span>Published on {published_label}</span>
-                <button type="button" class="generated-article__share" onclick="copyArticleLink()">Copy article link</button>
-                <span id="copy-status" hidden></span>
-            </div>
+            <p class="article-meta">
+                Published on {published_label}
+                <span class="inline-share">
+                    <script type="IN/Share" data-url=""></script>
+                </span>
+            </p>
 {hero}
         </header>
         <article class="generated-article__content">

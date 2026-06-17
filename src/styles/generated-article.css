@@ -26,6 +26,22 @@
   color: #355f52;
 }
 
+.article-meta {
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.2;
+}
+
+.inline-share {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-left: 8px;
+}
+
 .generated-article__share {
   border: 0;
   border-radius: 999px;
@@ -33,6 +49,10 @@
   color: #fff;
   padding: 10px 16px;
   cursor: pointer;
+}
+
+.generated-article__share--secondary {
+  background: #0a66c2;
 }
 
 .generated-article__cover,
